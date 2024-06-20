@@ -1,9 +1,8 @@
 "use client";
-
 import {useState} from 'react';
 import {Button, Col, Container, FloatingLabel, Form, Row} from "react-bootstrap";
-import NavbarHome from "lab1/components/shared/navbar";
-import LoginModal from "lab1/componentsC/login-modal/page";
+import Navbar from "lab1/components/shared/navbar/page";
+import LoginModal from "lab1/components/login-modal/page";
 
 export default function LoginPage() {
   const [show, setShow] = useState(false);  
@@ -13,7 +12,7 @@ export default function LoginPage() {
   return (
     <Container>
     <Row>
-      <NavbarHome/>
+      <Navbar/>
     </Row>
       <Form>
         <Row>
@@ -40,5 +39,6 @@ export default function LoginPage() {
       </Form>
 
     <LoginModal show={show}/>
-  </Container>);
+  </Container>
+  );
 }

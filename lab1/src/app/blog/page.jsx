@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Navbar from "lab1/components/shared/nabvar/page";
+import Navbar from "lab1/components/shared/navbar/page";
 export default function BlogPage(props) {
     const title = <h2>Blog</h2>;
     const list = [ 
@@ -8,7 +8,7 @@ export default function BlogPage(props) {
 
     return (
         <section>
-            <Navbar/>
+           
             {title}
             <ul> 
                 {list.map((item, index) => (<li><Link href={`/blog/${index}`}>{item}</Link></li>))}
