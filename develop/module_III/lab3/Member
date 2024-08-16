@@ -1,0 +1,38 @@
+const User = require("./User");
+
+class Member extends User {
+
+  constructor(email, firstName, lastName, typeDocument, numberDocument, phone, address, passw, typeRoll, nameRoll) {
+    super(email, firstName, lastName, typeDocument, numberDocument, phone, address, passw);
+    this._typeRoll = typeRoll
+    this._nameRoll = nameRoll;
+
+  }
+
+  get typeRoll() {
+    return this._typeRoll;
+  }
+
+  set typeRoll(value) {
+    this._typeRoll = value;
+  }
+
+  get nameRoll() {
+    return this._nameRoll;
+  }
+
+  set nameRoll(value) {
+    this._nameRoll = value;
+  }
+
+  displayInfo() {
+    super.displayInfo();
+    console.log(`TypeRoll : ${this._typeRoll}, NameRoll: ${this._nameRoll}`);
+  }
+
+  displayRollType() {
+    console.log(`RollType : ${this._typeRoll}`);
+  }
+}
+
+module.exports = Member;

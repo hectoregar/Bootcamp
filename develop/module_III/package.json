@@ -1,0 +1,11 @@
+{
+  "name": "module_iii",
+  "version": "1.0.0",
+  "description": "Lab2 Ejercicio 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hector Garcia",
+  "license": "ISC"
+}
